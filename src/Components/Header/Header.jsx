@@ -11,9 +11,8 @@ export const Header = () => {
         <h1 className='text-3xl '>fakeStoreJhon</h1>
       </div>  
       <div className='flex '>
-       <img src={searchIcon} alt=""  className='w-8 h-8'/>
+        <img src={searchIcon} alt=""  className='w-8 h-8'/>
         <input  type="search" name="" id="" placeholder='holajhon' className='h-7 w-72 flex justify-center' />
-       
       </div>
        <Items/>
     </div>
