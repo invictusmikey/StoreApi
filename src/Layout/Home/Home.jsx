@@ -1,17 +1,20 @@
 import React from 'react'
 import { Header } from '../../Components/Header/Header'
 import { Main } from '../../Components/Main/Main'
-import { Shop } from '../../Components/Shop/Shop'
+import { Section } from '../../Components/Section/Section'
+
 
 
 export const Home = () => {
+
+
   return (
     <>
-        <Header/>
-        <Main>
-          <Shop />
-        </Main>
-    
+      <Header />
+      <Main>
+        <Section />
+      </Main>
+
     </>
   )
 }
