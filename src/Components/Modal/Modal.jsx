@@ -5,7 +5,7 @@ import { ProductContext } from '../ProductContext/ProductContex';
 
 export const Modal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { cartItems, removeItemToCart, clearCart, saveToLocalStorage } = useContext(ProductContext);
+  const { cartItems, removeItemToCart, clearCart} = useContext(ProductContext);
 
   const closeModal = () => {
     setIsOpen(false);
@@ -49,10 +49,10 @@ export const Modal = () => {
                   ))}
                 </ul>
                 <button onClick={() => clearCart()} className="mb-4 text-red-600 border-black border-2 hover:scale-105 mt-3">Vaciar Carrito</button>
-                <button onClick={() => saveToLocalStorage({ id, image, price })}>Guardar carrito</button>
+               
               </div>
             ) : (
-              <p className="text-center">No hay productos en el carrito.</p>
+              <p className="text-center text-black">No hay productos en el carrito.</p>
             )}
           </div>
         </div>
